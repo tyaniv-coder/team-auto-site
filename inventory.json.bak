@@ -1,0 +1,70 @@
+{
+  "updated": "2026-09-15",
+  "cars": [
+    {
+      "year": 2016,
+      "make": "Honda",
+      "model": "Pilot",
+      "trim": "EX",
+      "price": 9200,
+      "miles": null,
+      "transmission": "",
+      "color": "",
+      "photos": [],
+      "notes": "",
+      "status": "available"
+    },
+    {
+      "year": 2018,
+      "make": "Toyota",
+      "model": "Corolla",
+      "trim": "LE",
+      "price": 7900,
+      "miles": null,
+      "transmission": "",
+      "color": "",
+      "photos": [],
+      "notes": "",
+      "status": "available"
+    },
+    {
+      "year": 2019,
+      "make": "Hyundai",
+      "model": "Kona",
+      "trim": "SE",
+      "price": 7900,
+      "miles": null,
+      "transmission": "",
+      "color": "",
+      "photos": [],
+      "notes": "",
+      "status": "available"
+    },
+    {
+      "year": 2018,
+      "make": "Kia",
+      "model": "Soul",
+      "trim": "Plus",
+      "price": 5700,
+      "miles": null,
+      "transmission": "",
+      "color": "",
+      "photos": [],
+      "notes": "",
+      "status": "available"
+    },
+    {
+      "year": 1990,
+      "make": "Volkswagen",
+      "model": "Cabriolet",
+      "trim": "Best Seller",
+      "price": null,
+      "miles": 53820,
+      "transmission": "5-speed manual",
+      "color": "Yellow, white top",
+      "photos": [],
+      "notes": "Original miles. Needs a new top and does not currently start.",
+      "status": "available"
+    }
+  ]
+}

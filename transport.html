@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Car Transport | Team Auto Transports, Hallandale Beach, FL</title>
+  <meta name="description" content="Door-to-door car shipping out of South Florida. Open or enclosed, running or not. Call or text (786) 417-0466 for a same-day price.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="transport">
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Team Auto Transports<small>Hallandale Beach, FL</small></a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="transport.html" aria-current="page">Transport</a>
+      <a href="sales.html">Car sales</a>
+      <a href="rentals.html">Rentals</a>
+    </nav>
+    <a class="header-call" href="tel:+17864170466">(786) 417-0466</a>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>Your car, picked up and delivered.</h1>
+      <p class="lead">Door-to-door shipping out of South Florida, open or enclosed, running or not. You deal with one person from quote to delivery.</p>
+      <div class="btn-row">
+        <a class="btn btn-sign" href="#quote">Get a price</a>
+        <a class="btn btn-ghost" href="tel:+17864170466">Call (786) 417-0466</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-white">
+    <div class="wrap">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li>
+          <h3>Send the details</h3>
+          <p>Pickup ZIP, delivery ZIP, year, make and model, and whether it runs. You get a real price, not a low teaser that goes up after booking.</p>
+        </li>
+        <li>
+          <h3>We book the carrier</h3>
+          <p>Your car goes to a licensed, insured carrier. You get the driver's name and number before pickup.</p>
+        </li>
+        <li>
+          <h3>Inspect and sign</h3>
+          <p>The car is inspected and photographed at pickup and again at delivery. You pay the driver on delivery.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap split">
+      <div>
+        <h2>Popular routes</h2>
+        <p>We ship nationwide. These are the routes we run most, so pickup is usually faster and the price is sharper.</p>
+        <table class="routes">
+          <thead><tr><th scope="col">Route</th><th scope="col">Transit time</th></tr></thead>
+          <tbody>
+            <tr><td>South Florida to New York / New Jersey</td><td>3-5 days</td></tr>
+            <tr><td>South Florida to Chicago</td><td>4-6 days</td></tr>
+            <tr><td>South Florida to Texas</td><td>3-4 days</td></tr>
+            <tr><td>South Florida to California</td><td>7-10 days</td></tr>
+            <tr><td>Miami to Atlanta / the Carolinas</td><td>2-3 days</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>We also ship</h2>
+        <ul class="checklist">
+          <li>Classics and exotics in enclosed trailers</li>
+          <li>Cars that do not run, on winch-equipped trucks</li>
+          <li>Dealer and auction pickups, multi-car loads</li>
+          <li>Snowbird trips north in spring and south in fall</li>
+          <li>Turo and rental fleet moves</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-sign" id="quote">
+    <div class="wrap split">
+      <div>
+        <h2>Tell us where it is and where it is going.</h2>
+        <p class="lead">Calls and texts get answered. After hours, send the form or a text and you will have a price in the morning.</p>
+        <div class="btn-row">
+          <a class="btn btn-paint" href="tel:+17864170466">Call (786) 417-0466</a>
+          <a class="btn btn-ghost" style="color:#fff;border-color:#fff" href="sms:+17864170466?&body=Pickup%20ZIP%3A%0ADelivery%20ZIP%3A%0AYear%2FMake%2FModel%3A%0ARuns%3F%3A">Text the details</a>
+        </div>
+      </div>
+
+      <form class="form-card" name="transport-quote" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+            data-success="Request sent. We will call or text you with a price shortly.">
+        <input type="hidden" name="form-name" value="transport-quote">
+        <input type="hidden" name="source" value="Transport page">
+        <p class="hidden-field"><label>Leave empty <input name="bot-field"></label></p>
+        <h3>Transport request</h3>
+        <div class="fields">
+          <div class="field"><label for="t-name">Name</label><input id="t-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="t-phone">Phone</label><input id="t-phone" name="phone" type="tel" autocomplete="tel" required></div>
+          <div class="field"><label for="t-from">Pickup ZIP</label><input id="t-from" name="pickup_zip" inputmode="numeric" maxlength="10" required></div>
+          <div class="field"><label for="t-to">Delivery ZIP</label><input id="t-to" name="delivery_zip" inputmode="numeric" maxlength="10" required></div>
+          <div class="field field-full"><label for="t-vehicle">Year, make and model</label><input id="t-vehicle" name="vehicle" placeholder="2021 Toyota Camry" required></div>
+          <div class="field"><label for="t-runs">Does it run?</label>
+            <select id="t-runs" name="runs"><option>Yes</option><option>No</option><option>Not sure</option></select></div>
+          <div class="field"><label for="t-type">Trailer</label>
+            <select id="t-type" name="trailer"><option>Open</option><option>Enclosed</option><option>Not sure</option></select></div>
+          <div class="field field-full"><label for="t-date">First available pickup date</label><input id="t-date" name="pickup_date" type="date"></div>
+          <div class="field field-full"><label for="t-msg">Anything else</label><textarea id="t-msg" name="message"></textarea></div>
+        </div>
+        <button class="btn btn-paint" type="submit">Send transport request</button>
+        <p class="form-msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <strong>Team Auto Transports</strong>
+      <p>Based in Hallandale Beach, Florida. Serving customers nationwide.</p>
+      <!-- Add real numbers before going public:
+      <p>USDOT XXXXXXX, MC XXXXXX. FL Dealer License XXXXXXX.</p> -->
+    </div>
+    <div>
+      <p><a href="tel:+17864170466">(786) 417-0466</a><br>Call or text</p>
+      <p>&copy; <span data-year></span> Team Auto Transports</p>
+    </div>
+  </div>
+</footer>
+
+<div class="call-bar">
+  <a class="btn btn-paint" href="tel:+17864170466">Call</a>
+  <a class="btn btn-ghost" style="color:#fff;border-color:#fff" href="sms:+17864170466">Text</a>
+</div>
+
+<form name="chat" data-netlify="true" hidden>
+  <input name="topic"><input name="details"><input name="name"><input name="phone"><input name="page">
+</form>
+<script src="site.js"></script>
+</body>
+</html>

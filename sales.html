@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Used Cars, We Buy Cars, Auction Sourcing | Team Auto Transports</title>
+  <meta name="description" content="Used cars for sale in Hallandale Beach, FL. We buy cars, and we get you a car from dealer auctions at wholesale price plus a fee. Call or text (786) 417-0466.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="sales">
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Team Auto Transports<small>Hallandale Beach, FL</small></a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="transport.html">Transport</a>
+      <a href="sales.html" aria-current="page">Car sales</a>
+      <a href="rentals.html">Rentals</a>
+    </nav>
+    <a class="header-call" href="tel:+17864170466">(786) 417-0466</a>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>We buy cars. We sell cars. We find the one you want.</h1>
+      <p class="lead">Based in Hallandale Beach. Cars priced to market and described honestly.</p>
+
+      <div class="offers">
+        <div class="offer">
+          <h3>We buy</h3>
+          <p>Selling your car? Send the year, make, model and miles. You get a cash offer, and we handle the paperwork.</p>
+          <a class="btn btn-sign" href="#inquiry" data-request="Sell my car">Get an offer</a>
+        </div>
+        <div class="offer">
+          <h3>We sell</h3>
+          <p>Browse what is on the lot below. Cars move fast, so call or text before you drive out.</p>
+          <a class="btn btn-sign" href="#cars">See the cars</a>
+        </div>
+        <div class="offer offer-auction">
+          <h3>Auction access</h3>
+          <p>Tell us what you want. We buy it at dealer-only auctions at the wholesale price, and you pay that price plus our fee. You see the auction price.</p>
+          <a class="btn btn-sign" href="#inquiry" data-request="Find me a car at auction">Request a car</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-white" id="cars">
+    <div class="wrap">
+      <h2>Cars for sale</h2>
+      <p class="lead">Call or text to confirm a car is still here before you come by.</p>
+      <p class="inventory-status" id="inventory-status" role="status">Loading cars...</p>
+      <div class="inventory" id="inventory"></div>
+    </div>
+  </section>
+
+  <section class="section section-sign" id="inquiry">
+    <div class="wrap split">
+      <div>
+        <h2>Tell us what you need.</h2>
+        <p class="lead">Selling, buying off the lot, or sourcing from auction. One form, and a real person gets back to you.</p>
+        <ul class="checklist">
+          <li>Selling: year, make, model, miles and condition</li>
+          <li>Buying: which car you saw</li>
+          <li>Auction: the car you want and your budget</li>
+        </ul>
+      </div>
+
+      <form class="form-card" name="sales-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+            data-success="Sent. We will call or text you shortly.">
+        <input type="hidden" name="form-name" value="sales-inquiry">
+        <p class="hidden-field"><label>Leave empty <input name="bot-field"></label></p>
+        <h3>Car sales request</h3>
+        <fieldset style="border:0;padding:0;margin:0 0 14px">
+          <legend style="font-weight:600;margin-bottom:6px">I want to</legend>
+          <div class="radio-row">
+            <label><input type="radio" name="request" value="Sell my car" required> Sell my car</label>
+            <label><input type="radio" name="request" value="Buy a car on the lot"> Buy a car on the lot</label>
+            <label><input type="radio" name="request" value="Find me a car at auction"> Get a car from auction</label>
+          </div>
+        </fieldset>
+        <div class="fields">
+          <div class="field"><label for="s-name">Name</label><input id="s-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="s-phone">Phone</label><input id="s-phone" name="phone" type="tel" autocomplete="tel" required></div>
+          <div class="field field-full"><label for="s-vehicle">Car (year, make, model)</label><input id="s-vehicle" name="vehicle" placeholder="2020 Honda Accord"></div>
+          <div class="field"><label for="s-miles">Miles</label><input id="s-miles" name="miles" inputmode="numeric"></div>
+          <div class="field"><label for="s-budget">Budget</label><input id="s-budget" name="budget" inputmode="numeric" placeholder="For auction requests"></div>
+          <div class="field field-full"><label for="s-msg">Details</label><textarea id="s-msg" name="message" placeholder="Condition, color, must-haves"></textarea></div>
+        </div>
+        <button class="btn btn-paint" type="submit">Send request</button>
+        <p class="form-msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <strong>Team Auto Transports</strong>
+      <p>Based in Hallandale Beach, Florida. Serving customers nationwide.</p>
+      <!-- Add real numbers before going public:
+      <p>USDOT XXXXXXX, MC XXXXXX. FL Dealer License XXXXXXX.</p> -->
+    </div>
+    <div>
+      <p><a href="tel:+17864170466">(786) 417-0466</a><br>Call or text</p>
+      <p>&copy; <span data-year></span> Team Auto Transports</p>
+    </div>
+  </div>
+</footer>
+
+<div class="call-bar">
+  <a class="btn btn-paint" href="tel:+17864170466">Call</a>
+  <a class="btn btn-ghost" style="color:#fff;border-color:#fff" href="sms:+17864170466">Text</a>
+</div>
+
+<form name="chat" data-netlify="true" hidden>
+  <input name="topic"><input name="details"><input name="name"><input name="phone"><input name="page">
+</form>
+<script src="site.js"></script>
+</body>
+</html>
