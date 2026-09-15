@@ -1,0 +1,103 @@
+media:
+  - name: images
+    label: Photos
+    input: images
+    output: images
+    extensions: [jpg, jpeg, png, webp]
+
+content:
+  - name: inventory
+    label: Cars for sale
+    type: file
+    path: inventory.json
+    format: json
+    fields:
+      - name: updated
+        label: Last updated
+        type: date
+        options:
+          format: yyyy-MM-dd
+
+      - name: cars
+        label: Cars
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{year} {make} {model} {trim} - {status}"
+        fields:
+          - name: year
+            label: Year
+            type: number
+            required: true
+            options:
+              min: 1900
+              max: 2030
+              step: 1
+
+          - name: make
+            label: Make
+            type: string
+            required: true
+
+          - name: model
+            label: Model
+            type: string
+            required: true
+
+          - name: trim
+            label: Trim
+            type: string
+
+          - name: price
+            label: Price (leave empty for "Call for price")
+            type: number
+            options:
+              min: 0
+              step: 100
+
+          - name: miles
+            label: Miles
+            type: number
+            options:
+              min: 0
+              step: 1
+
+          - name: transmission
+            label: Transmission
+            type: string
+
+          - name: color
+            label: Color
+            type: string
+
+          - name: vin
+            label: VIN
+            type: string
+
+          - name: photos
+            label: Photos (first one is the main image)
+            type: image
+            options:
+              media: images
+              path: images/cars
+              multiple: true
+              extensions: [jpg, jpeg, png, webp]
+
+          - name: notes
+            label: Notes shown on the card
+            type: text
+
+          - name: status
+            label: Status
+            type: select
+            required: true
+            options:
+              default: available
+              values:
+                - value: available
+                  label: Available - shows on the site
+                - value: sold
+                  label: Sold - hidden from the site
+                - value: hidden
+                  label: Hidden - not shown
