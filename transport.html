@@ -101,11 +101,13 @@
             data-success="Request sent. We will call or text you with a price shortly.">
         <input type="hidden" name="form-name" value="transport-quote">
         <input type="hidden" name="source" value="Transport page">
+        <input type="hidden" name="subject" value="">
         <p class="hidden-field"><label>Leave empty <input name="bot-field"></label></p>
         <h3>Transport request</h3>
         <div class="fields">
           <div class="field"><label for="t-name">Name</label><input id="t-name" name="name" autocomplete="name" required></div>
           <div class="field"><label for="t-phone">Phone</label><input id="t-phone" name="phone" type="tel" autocomplete="tel" required></div>
+          <div class="field field-full"><label for="t-email">Email (optional, so we can reply by email)</label><input id="t-email" name="email" type="email" autocomplete="email"></div>
           <div class="field"><label for="t-from">Pickup ZIP</label><input id="t-from" name="pickup_zip" inputmode="numeric" maxlength="10" required></div>
           <div class="field"><label for="t-to">Delivery ZIP</label><input id="t-to" name="delivery_zip" inputmode="numeric" maxlength="10" required></div>
           <div class="field field-full"><label for="t-vehicle">Year, make and model</label><input id="t-vehicle" name="vehicle" placeholder="2021 Toyota Camry" required></div>
@@ -144,7 +146,7 @@
 </div>
 
 <form name="chat" data-netlify="true" hidden>
-  <input name="topic"><input name="details"><input name="name"><input name="phone"><input name="page">
+  <input name="topic"><input name="details"><input name="name"><input name="phone"><input name="page"><input name="subject">
 </form>
 <script src="site.js"></script>
 </body>

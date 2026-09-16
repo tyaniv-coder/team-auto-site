@@ -94,11 +94,13 @@
         <input type="hidden" name="runs" value="">
         <input type="hidden" name="trailer" value="">
         <input type="hidden" name="pickup_date" value="">
+        <input type="hidden" name="subject" value="">
         <p class="hidden-field"><label>Leave empty <input name="bot-field"></label></p>
         <h3>Transport request</h3>
         <div class="fields">
           <div class="field"><label for="q-name">Name</label><input id="q-name" name="name" autocomplete="name" required></div>
           <div class="field"><label for="q-phone">Phone</label><input id="q-phone" name="phone" type="tel" autocomplete="tel" required></div>
+          <div class="field field-full"><label for="q-email">Email (optional, so we can reply by email)</label><input id="q-email" name="email" type="email" autocomplete="email"></div>
           <div class="field"><label for="q-from">Pickup ZIP</label><input id="q-from" name="pickup_zip" inputmode="numeric" maxlength="10" required></div>
           <div class="field"><label for="q-to">Delivery ZIP</label><input id="q-to" name="delivery_zip" inputmode="numeric" maxlength="10" required></div>
           <div class="field field-full"><label for="q-vehicle">Year, make and model</label><input id="q-vehicle" name="vehicle" placeholder="2021 Toyota Camry" required></div>
@@ -132,7 +134,7 @@
 </div>
 
 <form name="chat" data-netlify="true" hidden>
-  <input name="topic"><input name="details"><input name="name"><input name="phone"><input name="page">
+  <input name="topic"><input name="details"><input name="name"><input name="phone"><input name="page"><input name="subject">
 </form>
 <script src="site.js"></script>
 </body>

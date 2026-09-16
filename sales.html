@@ -75,6 +75,7 @@
       <form class="form-card" name="sales-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field"
             data-success="Sent. We will call or text you shortly.">
         <input type="hidden" name="form-name" value="sales-inquiry">
+        <input type="hidden" name="subject" value="">
         <p class="hidden-field"><label>Leave empty <input name="bot-field"></label></p>
         <h3>Car sales request</h3>
         <fieldset style="border:0;padding:0;margin:0 0 14px">
@@ -88,6 +89,7 @@
         <div class="fields">
           <div class="field"><label for="s-name">Name</label><input id="s-name" name="name" autocomplete="name" required></div>
           <div class="field"><label for="s-phone">Phone</label><input id="s-phone" name="phone" type="tel" autocomplete="tel" required></div>
+          <div class="field field-full"><label for="s-email">Email (optional, so we can reply by email)</label><input id="s-email" name="email" type="email" autocomplete="email"></div>
           <div class="field field-full"><label for="s-vehicle">Car (year, make, model)</label><input id="s-vehicle" name="vehicle" placeholder="2020 Honda Accord"></div>
           <div class="field"><label for="s-miles">Miles</label><input id="s-miles" name="miles" inputmode="numeric"></div>
           <div class="field"><label for="s-budget">Budget</label><input id="s-budget" name="budget" inputmode="numeric" placeholder="For auction requests"></div>
@@ -121,7 +123,7 @@
 </div>
 
 <form name="chat" data-netlify="true" hidden>
-  <input name="topic"><input name="details"><input name="name"><input name="phone"><input name="page">
+  <input name="topic"><input name="details"><input name="name"><input name="phone"><input name="page"><input name="subject">
 </form>
 <script src="site.js"></script>
 </body>
