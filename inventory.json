@@ -111,6 +111,26 @@
       "model": "Pilot",
       "trim": "EX",
       "price": 9200,
+      "miles": 101684,
+      "transmission": "Automatic ",
+      "color": "dark navy blue metallic",
+      "vin": "5FNYF5H31GB058823",
+      "photos": [
+        "images/cars/rFZgfgq6TECIFGLl3N-Zuw.jpg",
+        "images/cars/uSiaC6XwQwy6KOXcgz8OEA.jpg",
+        "images/cars/8iCFYgv6QNS--oIvSgKXyQ-1.jpg",
+        "images/cars/f7rONDkBQSOyeLKLHvopag.jpg",
+        "images/cars/QQNGUGbZQL2S_9NZVJ3MUQ.jpg",
+        "images/cars/8iCFYgv6QNS--oIvSgKXyQ.jpg",
+        "images/cars/-bchejeUSUeJdDdXyjYX8g.jpg",
+        "images/cars/3xYHKCLOS7ubM3Q-aDMpqg.jpg",
+        "images/cars/h2cVfs1NRTS4WvZNL6kjnw.jpg",
+        "images/cars/xqgvALMKQbKB9VsJ8stFkQ.jpg",
+        "images/cars/3niw3r-6ScOCs5Il1i3Mrg.jpg",
+        "images/cars/VH6EExTKTy-ETB903TEG-w.jpg",
+        "images/cars/0aY-_JYeSuCrnNYTuAJpkA.jpg",
+        "images/cars/3xYHKCLOS7ubM3Q-aDMpqg-1.jpg"
+      ],
       "status": "available"
     }
   ]
