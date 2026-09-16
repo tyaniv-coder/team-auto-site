@@ -29,12 +29,21 @@
       "model": "Kona",
       "trim": "SE",
       "price": 7900,
+      "miles": 112447,
+      "transmission": "Automatic ",
+      "color": "White",
+      "vin": "KM8K12AA8KU257441",
       "photos": [
-        "images/cars/kona/01.jpg",
-        "images/cars/kona/02.jpg",
-        "images/cars/kona/03.jpg",
-        "images/cars/kona/04.jpg",
-        "images/cars/kona/05.jpg"
+        "images/cars/G-gu5R2lQy6W04CKY3KovA.jpg",
+        "images/cars/GQtHTQs1SFmPTPDT9-CTWw.jpg",
+        "images/cars/uGDegfY6RaCpLK2EnJLtiQ.jpg",
+        "images/cars/TAC8gVaKTDWdq74miaDE6w.jpg",
+        "images/cars/A7KOv8-dTKyNLbUHIawb0A.jpg",
+        "images/cars/5LYiAmc1Sbu5QvvQOkhbbA.jpg",
+        "images/cars/h59LVNruR1yQorcfMlqU9w.jpg",
+        "images/cars/QXzZFaYtRMO4lrocYBF2yw.jpg",
+        "images/cars/J50tqXl8RHC0eRln-xtVTQ.jpg",
+        "images/cars/fex2-TtjTCyPOZnjMAlh8Q.jpg"
       ],
       "status": "available"
     },
