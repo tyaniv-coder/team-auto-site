@@ -2,28 +2,11 @@
   "updated": "2026-09-15",
   "cars": [
     {
-      "year": 2016,
-      "make": "Honda",
-      "model": "Pilot",
-      "trim": "EX",
-      "price": 9200,
-      "miles": null,
-      "transmission": "",
-      "color": "",
-      "photos": [],
-      "notes": "",
-      "status": "available",
-      "vin": ""
-    },
-    {
       "year": 2018,
       "make": "Toyota",
       "model": "Corolla",
       "trim": "LE",
       "price": 7900,
-      "miles": null,
-      "transmission": "",
-      "color": "",
       "photos": [
         "images/cars/corolla/01.jpg",
         "images/cars/corolla/02.jpg",
@@ -38,9 +21,7 @@
         "images/cars/corolla/11.jpg",
         "images/cars/corolla/12.jpg"
       ],
-      "notes": "",
-      "status": "available",
-      "vin": ""
+      "status": "available"
     },
     {
       "year": 2019,
@@ -48,9 +29,6 @@
       "model": "Kona",
       "trim": "SE",
       "price": 7900,
-      "miles": null,
-      "transmission": "",
-      "color": "",
       "photos": [
         "images/cars/kona/01.jpg",
         "images/cars/kona/02.jpg",
@@ -58,9 +36,7 @@
         "images/cars/kona/04.jpg",
         "images/cars/kona/05.jpg"
       ],
-      "notes": "",
-      "status": "available",
-      "vin": ""
+      "status": "available"
     },
     {
       "year": 2017,
@@ -68,9 +44,6 @@
       "model": "Soul",
       "trim": "Plus",
       "price": 5700,
-      "miles": null,
-      "transmission": "",
-      "color": "",
       "photos": [
         "images/cars/kia-soul/01.jpg",
         "images/cars/kia-soul/02.jpg",
@@ -96,19 +69,17 @@
         "images/cars/kia-soul/22.jpg",
         "images/cars/kia-soul/23.jpg"
       ],
-      "notes": "",
-      "status": "available",
-      "vin": ""
+      "status": "available"
     },
     {
       "year": 1990,
       "make": "Volkswagen",
       "model": "Cabriolet",
       "trim": "Best Seller",
-      "price": null,
       "miles": 53820,
       "transmission": "5-speed manual",
       "color": "Yellow, white top",
+      "vin": "WVWCB5154LK031050",
       "photos": [
         "images/cars/vw-cabriolet/01.jpg",
         "images/cars/vw-cabriolet/02.jpg",
@@ -132,8 +103,15 @@
         "images/cars/vw-cabriolet/20.jpg"
       ],
       "notes": "Original miles. Needs a new top and does not currently start.",
-      "status": "available",
-      "vin": "WVWCB5154LK031050"
+      "status": "available"
+    },
+    {
+      "year": 2016,
+      "make": "Honda",
+      "model": "Pilot",
+      "trim": "EX",
+      "price": 9200,
+      "status": "available"
     }
   ]
 }
