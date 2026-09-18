@@ -59,6 +59,9 @@ if (grid) {
   const status = document.getElementById("inventory-status");
   const money = n => "$" + Number(n).toLocaleString("en-US");
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  // Must stay identical to slug() in generate-cars.js.
+  const slug = c => [c.year, c.make, c.model, c.trim].filter(Boolean).join(" ")
+    .toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
   fetch("inventory.json", { cache: "no-store" })
     .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
@@ -84,12 +87,13 @@ if (grid) {
           <article class="car">
             <div class="car-photo"${openable}>${photo}${count}</div>
             <div class="car-body">
-              <h3>${esc(title)}</h3>
+              <h3><a href="cars/${slug(c)}.html">${esc(title)}</a></h3>
               ${meta ? `<p class="car-meta">${esc(meta)}</p>` : ""}
               <p class="car-price">${price}</p>
               ${c.vin ? `<p class="car-meta">VIN ${esc(c.vin)}</p>` : ""}
               ${c.notes ? `<p class="car-meta">${esc(c.notes)}</p>` : ""}
-              <a class="btn btn-sign" href="sms:+17864170466?&body=${sms}">Text about this car</a>
+              <a class="btn btn-sign" href="cars/${slug(c)}.html">See details and photos</a>
+              <a class="btn btn-ghost" style="margin-top:8px" href="sms:+17864170466?&body=${sms}">Text about this car</a>
             </div>
           </article>`;
       }).join("");

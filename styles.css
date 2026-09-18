@@ -612,3 +612,45 @@ body.lb-open { overflow: hidden; }
 .site-header .wrap { position: relative; padding-top: 22px; }
 .bh { position: absolute; top: 3px; right: 16px; font-size: .8rem; color: #fff; opacity: .75; line-height: 1.2; }
 @media (max-width: 899px) { .site-header .wrap { padding-top: 18px; } }
+
+/* ---------- Car detail page ---------- */
+.crumb { margin-bottom: 18px; }
+.crumb a { color: var(--muted); font-weight: 600; text-decoration: none; }
+.crumb a:hover { color: var(--sign); }
+.car-detail { display: grid; gap: 28px; align-items: start; }
+.car-gallery, .car-info { min-width: 0; }
+@media (min-width: 900px) { .car-detail { grid-template-columns: 1.15fr 1fr; gap: 40px; } }
+.car-stage {
+  background: var(--panel);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  aspect-ratio: 3 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.car-stage img { width: 100%; height: 100%; object-fit: cover; }
+.car-stage svg { width: 55%; height: auto; opacity: .45; }
+.car-thumbs { display: flex; gap: 8px; margin-top: 10px; overflow-x: auto; padding-bottom: 4px; }
+.car-thumb {
+  flex: 0 0 84px;
+  height: 60px;
+  padding: 0;
+  border: 3px solid transparent;
+  border-radius: 8px;
+  background: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+.car-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.car-thumb.on { border-color: var(--paint); }
+.car-info h1 { font-size: 2.2rem; margin-bottom: 6px; }
+.car-price-lg { font-family: var(--display); font-weight: 700; font-size: 2.6rem; color: var(--sign); margin: 0 0 16px; }
+.car-specs { display: grid; gap: 0; margin: 0 0 22px; }
+.car-specs > div { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--line, #d9ddd8); }
+.car-specs dt { color: var(--muted); margin: 0; }
+.car-specs dd { margin: 0; font-weight: 600; text-align: right; }
+.car-cta { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 16px; }
+.car-note { color: var(--muted); font-size: .98rem; }
+.car-body h3 a { color: inherit; text-decoration: none; }
+.car-body h3 a:hover { color: var(--sign); text-decoration: underline; }
