@@ -1,3 +1,16 @@
 [build]
   command = "node generate-cars.js"
   publish = "."
+
+# Send the alias domains to the primary domain so Google sees one site.
+[[redirects]]
+  from = "https://teamautous.com/*"
+  to = "https://teamautotransports.net/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.teamautous.com/*"
+  to = "https://teamautotransports.net/:splat"
+  status = 301
+  force = true
