@@ -608,3 +608,7 @@ body.lb-open { overflow: hidden; }
 .faq dt:first-child { margin-top: 8px; }
 .faq dd { margin: 0; padding: 0 0 18px; border-bottom: 1px solid rgba(11,93,59,.14); }
 .faq dd:last-child { border-bottom: 0; }
+
+.site-header .wrap { position: relative; padding-top: 22px; }
+.bh { position: absolute; top: 3px; right: 16px; font-size: .8rem; color: #fff; opacity: .75; line-height: 1.2; }
+@media (max-width: 899px) { .site-header .wrap { padding-top: 18px; } }
