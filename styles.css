@@ -594,3 +594,17 @@ body.lb-open { overflow: hidden; }
   .lb-title { font-size: 1.1rem; }
   .lb-strip img { width: 66px; height: 48px; }
 }
+
+/* FAQ list (transport page) */
+.faq { margin: 0; max-width: 780px; }
+.faq dt {
+  font-family: "Barlow Condensed", "Barlow", sans-serif;
+  font-weight: 700;
+  font-size: 1.22rem;
+  letter-spacing: .01em;
+  margin: 26px 0 6px;
+  color: #0b5d3b;
+}
+.faq dt:first-child { margin-top: 8px; }
+.faq dd { margin: 0; padding: 0 0 18px; border-bottom: 1px solid rgba(11,93,59,.14); }
+.faq dd:last-child { border-bottom: 0; }
