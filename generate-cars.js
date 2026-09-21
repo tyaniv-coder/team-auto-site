@@ -178,6 +178,8 @@ ${specs.map(([k, v]) => `            <div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></
     <div>
       <strong>Team Auto Transports</strong>
       <p>Based in Hallandale Beach, Florida. Serving customers nationwide.</p>
+      <address class="footer-nap"><a href="https://www.google.com/maps/search/?api=1&amp;query=Team+Auto+US+3107+W+Hallandale+Beach+Blvd+Hallandale+Beach+FL+33009" target="_blank" rel="noopener">3107 W Hallandale Beach Blvd<br>Hallandale Beach, FL 33009</a></address>
+      <p class="footer-hours">Mon-Thu 9 am to 4 pm, Fri 9 am to 3 pm. Closed Sat and Sun.</p>
     </div>
     <div>
       <p><a href="${PHONE_HREF}">${PHONE_TEXT}</a><br>Call or text</p>

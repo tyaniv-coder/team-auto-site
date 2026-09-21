@@ -654,3 +654,8 @@ body.lb-open { overflow: hidden; }
 .car-note { color: var(--muted); font-size: .98rem; }
 .car-body h3 a { color: inherit; text-decoration: none; }
 .car-body h3 a:hover { color: var(--sign); text-decoration: underline; }
+
+.footer-nap { font-style: normal; margin: 0 0 8px; }
+.footer-nap a { color: #c9d0cb; text-decoration: none; }
+.footer-nap a:hover { color: var(--white); text-decoration: underline; }
+.footer-hours { margin: 0; }
